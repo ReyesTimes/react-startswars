@@ -1,0 +1,91 @@
+footer.Footer {
+    text-align: center;
+    color: #b7b8ba;
+    background-color: #000;
+    padding: 35px;
+    position: relative;
+    overflow: hidden;
+}
+
+footer.Footer::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.2;
+    background-image: url('./footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: contain;
+}
+
+footer.Footer .Container-information {
+    position: relative;
+    z-index: 2;
+}
+
+footer.Footer .Follow-text{
+    font-size: 1.429em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+footer .Copyright-text {
+    margin-top: 66px;
+    font-size: 1.048em;
+}
+
+footer.Footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+}
+
+footer.Footer ul a{
+    border-radius: 100%;
+    border: 3.5px solid #b7b8ba;
+    color: #b7b8ba;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.333em;
+    margin: 0px 14px;
+}
+
+footer.Footer ul a:hover{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    footer.Footer ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer.Footer::before {
+        height: 51%;
+        bottom: 0px;
+    }
+
+    footer.Footer ul a{
+        border: 2.5px solid #b7b8ba;
+        margin: 10px 0px;
+        width: 50px;
+        height: 50px;
+    }
+
+    footer.Footer .Follow-text{
+        margin-bottom: 20px;
+    }
+
+    footer .Copyright-text{
+        margin-top: 35px;
+    }
+}

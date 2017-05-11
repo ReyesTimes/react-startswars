@@ -1,0 +1,23 @@
+.Films {
+
+}
+
+.Films ul.Lists-films{
+    padding: 0px;
+    list-style: none;
+    display: flex;
+}
+
+.Films ul.Lists-films li{
+    width: 137px;
+    margin-right: 12px;
+}
+
+.Films ul.Lists-films li:last-child{
+    margin-right: 0px;
+}
+
+.Films ul.Lists-films li img{
+    width: 100%;
+    height: auto;
+}

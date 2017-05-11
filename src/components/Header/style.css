@@ -1,0 +1,56 @@
+header.Header{
+    background-color: #000;
+}
+
+header.Header .Container-flex{
+    display: flex;
+    align-items: center;
+    color: #949699;
+    padding: 0px 30px;
+    height: 90px;
+}
+header.Header .Container-flex .Logo-container{
+    width: 30%;
+    padding: 6px;
+}
+header.Header .Container-flex .Logo-container img{
+    width: 100%
+}
+header.Header .Container-flex .Container-menu{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header.Header nav{
+    font-size: 20px;
+}
+
+header.Header a {
+    color: #949699;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    header.Header .Container-flex .Logo-container{
+        width: 66%;
+    }
+    header.Header{
+        padding: 20px;
+    }
+    header.Header .Container-flex{
+        flex-direction: column;
+        height: auto;
+    }
+
+    header.Header .Container-flex .Container-menu{
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    header.Header nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
