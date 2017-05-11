@@ -1,16 +1,17 @@
 import React, { PropTypes, Component } from 'react';
+import { Link } from 'react-router-dom';
 import classnames from 'classnames';
 
 import './style.css';
 
-import film_01 from './film_01.jpg';
-import film_02 from './film_02.jpg';
-import film_03 from './film_03.jpg';
-import film_04 from './film_04.jpg';
-import film_05 from './film_05.jpg';
-import film_06 from './film_06.jpg';
-import film_07 from './film_07.jpg';
-import film_08 from './film_08.jpg';
+import film_01 from './img/film_01.jpg';
+import film_02 from './img/film_02.jpg';
+import film_03 from './img/film_03.jpg';
+import film_04 from './img/film_04.jpg';
+import film_05 from './img/film_05.jpg';
+import film_06 from './img/film_06.jpg';
+import film_07 from './img/film_07.jpg';
+import film_08 from './img/film_08.jpg';
 
 class Films extends Component {
   // static propTypes = {}
@@ -22,18 +23,34 @@ class Films extends Component {
     return (
         <div className={classnames('Films', className)} {...props}>
             <h1>// PELÍCULAS</h1>
-            <div>
-                <div>
-                    <h2>START WARS</h2>
-                    <p>EPISODE I: THE PHANTOM MENACE</p>
-                    <p><strong>Resumen:</strong></p>
-                    <p>Esperando resolver el problema con un bloqueo de
-mortíferos cruceros, la avariciosa Federación de Comercio
-hadetenido todos los envios al pequeño planeta
-de Naboo. <span>Leer màs...</span> </p>
-                </div>
-                <div>
+            <div className="Main-film">
+                <div className="Container-main-film">
+                    <div>
+                        <h2>START WARS</h2>
+                        <h3 className="title">EPISODE I: THE PHANTOM MENACE</h3>
+                        <div className="Ratings">
+                            <i className="fa fa-star"></i>
+                            <i className="fa fa-star"></i>
+                            <i className="fa fa-star"></i>
+                            <i className="fa fa-star"></i>
+                            <i className="fa fa-star-o"></i>
+                        </div>
+                        <p className="Resume"><strong>Resumen:</strong></p>
+                        <p className="Description">
+                        La República Galáctica está sumida en disturbios. Hay
+                protestas contra la tributación de las rutas comerciales
+                a sistemas estelares.
+                        </p>
+                        <p className="Description">
+                            Esperando resolver el problema con un bloqueo de
+                mortíferos cruceros, la avariciosa Federación de Comercio
+                hadetenido todos los envios al pequeño planeta
+                de Naboo. <Link to="/" className="Read-more">Leer màs...</Link>
+                        </p>
+                    </div>
+                    <div>
 
+                    </div>
                 </div>
             </div>
             <ul className="Lists-films">

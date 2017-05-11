@@ -1,5 +1,72 @@
-.Films {
+.Films .Read-more{
+    color: #f8a803;
+}
 
+.Films .Read-more:hover{
+    color: #f8a803;
+}
+
+.Films {
+    text-align: justify;
+}
+
+.Films .Resume{
+    font-size: 0.571em;
+}
+
+.Films .Main-film{
+    background: url(./img/bg-films.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.Films .Main-film::before{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.6;
+}
+
+.Films .Container-main-film{
+    padding: 25px 25px 45px 35px;
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+.Films .Container-main-film h2{
+    font-size: 2.571em;
+    margin-bottom: 5px;
+}
+
+.Films .Container-main-film h3.title{
+    font-size: 0.952em;
+    margin-top: 0px;
+}
+
+.Films .Container-main-film .Ratings{
+    font-size: 1.429em;
+    margin-bottom: 30px;
+    padding-left: 7px;
+}
+
+.Films .Container-main-film .Ratings i{
+    margin-right: 5px;
+}
+
+.Films .Container-main-film div:first-child{
+    width: 46%;
+}
+
+.Films .Description{
+    text-align: justify;
+    font-size: 0.857em;
 }
 
 .Films ul.Lists-films{
