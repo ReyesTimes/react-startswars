@@ -1,0 +1,75 @@
+.Sections-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    color: #fff;
+}
+
+.Sections-container > div{
+    width: 359px;
+    position: relative;
+}
+
+.Sections-container .Container-img img{
+    width: 100%;
+    height: auto;
+    max-height: 198px;
+}
+
+.Sections-container .Information{
+    background-color: #525253;
+    padding: 14px;
+    padding-bottom: 42px;
+    position: relative;
+    border-bottom-right-radius: 7.5px;
+    border-bottom-left-radius: 7.5px;
+}
+
+.Sections-container > div::after{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 50%;
+    height: 18px;
+    background-color: #fff;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    z-index: 1;
+}
+
+.Sections-container .Information::before{
+    content: '';
+    position: absolute;
+    background-color: #525253;
+    height: 18px;
+    width: 78px;
+    bottom: 0px;
+    border-bottom-right-radius: 6px;
+    z-index: 2;
+}
+
+.Sections-container .Information::after{
+    content: '';
+    position: absolute;
+    right: 20px;
+    background-color: #525253;
+    height: 18px;
+    width: 74px;
+    bottom: 0px;
+    border-bottom-left-radius: 7.5px;
+    z-index: 2;
+}
+
+.Sections-container h4 {
+    font-size: 1.143em;
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
+.Sections-container p {
+    font-size: 0.667em;
+}

@@ -3,15 +3,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {
   BrowserRouter as Router,
-  Route,
-  Link
+  Route
 } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 
 import App from './components/App';
 import About from './components/About';
-import NotFound from './components/NotFound';
 import Header from './components/Header';
 import Footer from './components/Footer';
 

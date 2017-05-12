@@ -1,7 +1,8 @@
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
 import classnames from 'classnames';
 
 import Films from './../Films';
+import Sections from './../Sections';
 
 import './style.css';
 
@@ -17,6 +18,7 @@ class App extends Component {
         <div className="container">
             <h1>// NOVEDADES - Desde una galaxia lejana</h1>
             <Films></Films>
+            <Sections></Sections>
         </div>
       </div>
     );

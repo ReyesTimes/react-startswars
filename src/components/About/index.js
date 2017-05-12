@@ -1,7 +1,5 @@
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
 import classnames from 'classnames';
-
-import Films from './../Films';
 
 import './style.css';
 

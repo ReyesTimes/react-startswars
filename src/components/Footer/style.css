@@ -5,6 +5,7 @@ footer.Footer {
     padding: 35px;
     position: relative;
     overflow: hidden;
+    margin-top: 30px;
 }
 
 footer.Footer::before {

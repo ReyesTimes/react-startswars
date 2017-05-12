@@ -1,8 +1,7 @@
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
 import classnames from 'classnames';
 
 import './style.css';
-import bgimg from './footer-bg.jpg';
 
 class Footer extends Component {
     render() {

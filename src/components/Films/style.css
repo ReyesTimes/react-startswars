@@ -1,12 +1,3 @@
-.Films .Read-more{
-    color: #f8a803;
-}
-
-.Films .Read-more:hover{
-    color: #f8a803;
-    text-decoration: none;
-}
-
 .Films {
     text-align: justify;
 }
