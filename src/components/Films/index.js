@@ -49,7 +49,12 @@ class Films extends Component {
                         </p>
                     </div>
                     <div>
-
+                        <button className="btn btn-link">
+                            <i className="fa fa-thumbs-o-up"></i>
+                        </button>
+                        <button className="btn btn-link">
+                            <i className="fa fa-thumbs-o-down"></i>
+                        </button>
                     </div>
                 </div>
             </div>
